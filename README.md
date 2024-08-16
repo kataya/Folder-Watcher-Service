@@ -33,6 +33,17 @@ To install service, in command line (in `RenameFolderService.py` directory, or a
 
 `python RenameFolderService.py install`
 
+To start service, in command line 
+
+`python RenameFolderService.py start`
+
+To stop service, in command line
+
+`python RenameFolderService.py stop`
+
+To restart service, in command line
+
+`python RenameFolderService.py restart`
 
 If later, you want to change path, after changing the hardcoded path, update service in command line:
 
