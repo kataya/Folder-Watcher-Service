@@ -19,8 +19,12 @@ class CsvWatcher:
         self.__event_observer.start()
 
     def stop(self):
+        self.__unschedule_all()
         self.__event_observer.stop()
         self.__event_observer.join()
 
     def __schedule(self):
         self.__event_observer.schedule(self.__event_handler, self.__src_path, recursive=True)
+        
+    def __unschedule_all(self):
+        self.__event_observer.unschedule_all()
